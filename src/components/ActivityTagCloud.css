@@ -85,10 +85,18 @@
   .tag-cloud__list {
     column-count: 2;
   }
+  .tag-cloud__item:hover {
+    background: white;
+    color: black;
+  }
 }
 
 @media (max-width: 460px) {
   .tag-cloud__list {
     column-count: 1;
+  }
+  .tag-cloud__item:hover {
+    background: white;
+    color: black;
   }
 }
