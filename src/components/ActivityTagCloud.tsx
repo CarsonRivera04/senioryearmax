@@ -13,7 +13,8 @@ type Activity = {
 }
 
 export const activities: Activity[] = [
-  { title: 'Watch one of every sport', done: true, date: '8/25/2026' },
+  { title: 'Create senioryearmax.com', done: true, date: '6/27/2026' },
+  { title: 'Watch one of every sport', done: false, date: '' },
   { title: 'Union bowling', done: false, date: '' },
   { title: 'Paint a pot', done: false, date: '' },
   { title: 'ASLC Movi', done: false, date: '' },
@@ -110,7 +111,7 @@ function ActivityTagCloud({ activities: activityList = activities }: ActivityTag
     <section className="tag-cloud" aria-labelledby="activity-tag-cloud-heading">
       <h2 id="activity-tag-cloud-heading">Senior Year Max Activities</h2>
       <p>
-        {doneCount} done. {uniqueActivities.length - doneCount} not done.
+        {doneCount} conquered. {uniqueActivities.length - doneCount} to go.
       </p>
       <div className="tag-cloud__list">
         {uniqueActivities.map((activity) => {

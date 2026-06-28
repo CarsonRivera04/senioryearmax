@@ -1,8 +1,25 @@
 .page {
-  width: min(100%, 760px);
+  width: min(100%, 960px);
   margin: 0 auto;
   padding: 48px 24px;
   box-sizing: border-box;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 280px);
+  gap: 28px;
+  align-items: start;
+}
+
+.intro-text {
+  min-width: 0;
+}
+
+.time-image {
+  width: 50%;
+  height: auto;
+  display: block;
 }
 
 .component-area {
@@ -12,5 +29,15 @@
 @media (max-width: 640px) {
   .page {
     padding: 28px 16px;
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .time-image {
+    max-width: 150px;
+    margin: auto;
   }
 }
