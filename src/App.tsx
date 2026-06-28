@@ -1,11 +1,18 @@
 import './App.css'
 import ActivityTagCloud from './components/ActivityTagCloud.tsx'
 import CustomCountdown from './components/CustomCountdown.tsx'
+import Progress from './components/Progress.tsx'
 
 function ComponentArea() {
   return (
     <section className="component-area" aria-label="React component area">
+      <Progress done={1} total={53} />
       <ActivityTagCloud />
+      <button className="join-button">
+        <a href="mailto:carsonrivera04@gmail.com" target="_blank" rel="noopener noreferrer">
+          Join the movement
+        </a>
+      </button>
     </section>
   );
 }

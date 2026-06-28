@@ -107,9 +107,9 @@ function ActivityTagCloud({ activities: activityList = activities }: ActivityTag
 
   return (
     <section className="tag-cloud" aria-labelledby="activity-tag-cloud-heading">
-      <h2 id="activity-tag-cloud-heading">Senior Year Max Activities</h2>
+      <h2 id="activity-tag-cloud-heading">The Official Senior Year Max Bucket List</h2>
       <p>
-        {doneCount} conquered. {uniqueActivities.length - doneCount} to go.
+        {doneCount} conquered. {uniqueActivities.length - doneCount} to go. 
       </p>
       <div className="tag-cloud__list">
         {uniqueActivities.map((activity) => {

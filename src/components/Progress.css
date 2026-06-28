@@ -1,0 +1,177 @@
+.ocean-progress {
+  --finish-height: clamp(260px, 34vw, 360px);
+
+  position: relative;
+  min-height: 1180px;
+  overflow: hidden;
+  background-image: url('/water.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 3px solid black;
+  box-sizing: border-box;
+  color: white;
+  isolation: isolate;
+}
+
+.ocean-progress::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.2),
+    rgba(0, 0, 0, 0.5)
+  );
+}
+
+.water-zone {
+  position: absolute;
+  inset: 56px 0 calc(var(--finish-height) + 58px) 0;
+}
+
+.depth-scale {
+  position: absolute;
+  inset: 0 auto 0 16px;
+  width: 110px;
+  border-left: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.depth-mark {
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 0 black;
+  transform: translateY(-50%);
+}
+
+.depth-mark::before {
+  content: "";
+  width: 14px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.submarine-track {
+  position: absolute;
+  top: var(--progress-depth);
+  left: 58%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transform: translate(-50%, -50%);
+  transition: top 500ms ease;
+}
+
+.submarine-image {
+  display: block;
+  width: clamp(210px, 42vw, 390px);
+  height: auto;
+  filter: drop-shadow(4px 6px 0 rgba(0, 0, 0, 0.35));
+}
+
+.depth-readout {
+  display: grid;
+  gap: 2px;
+  min-width: 112px;
+  padding: 8px 10px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  box-sizing: border-box;
+  text-shadow: 1px 1px 0 black;
+}
+
+.depth-readout strong {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.depth-readout span {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.finish-line {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: var(--finish-height);
+  display: grid;
+  grid-template-rows: 48px minmax(0, 1fr) 48px;
+  background: white;
+  border-top: 3px solid black;
+  box-sizing: border-box;
+}
+
+.checker-row {
+  background-image: url('/checker.png');
+  background-size: 48px 48px;
+  background-repeat: repeat;
+}
+
+.job-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  padding: 12px 16px;
+  background: #f4f4f4;
+  box-sizing: border-box;
+}
+
+.job-image {
+  display: block;
+  width: auto;
+  max-width: min(100%, 420px);
+  height: 100%;
+  object-fit: contain;
+  border: 2px solid black;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 640px) {
+  .ocean-progress {
+    --finish-height: 250px;
+
+    min-height: 980px;
+  }
+
+  .depth-scale {
+    left: 10px;
+    width: 88px;
+  }
+
+  .depth-mark {
+    font-size: 0.7rem;
+  }
+
+  .submarine-track {
+    left: 62%;
+    gap: 8px;
+  }
+
+  .depth-readout {
+    min-width: 86px;
+    padding: 6px 8px;
+  }
+
+  .finish-line {
+    grid-template-rows: 36px minmax(0, 1fr) 36px;
+  }
+
+  .checker-row {
+    background-size: 36px 36px;
+  }
+
+  .job-row {
+    padding: 8px;
+  }
+}
