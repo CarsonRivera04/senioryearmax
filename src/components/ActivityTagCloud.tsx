@@ -27,6 +27,7 @@ export const activities: Activity[] = [
   { title: 'Play Racquetball at the Leach', done: false, date: '' },
   { title: 'Truco Tuesday (Trusday)', done: false, date: '' },
   { title: 'Nintendo DS night (Mario Kart)', done: false, date: '' },
+  { title: 'Celebrate America\'s 250th in Destin!', done: false, date: '' },
   { title: 'Host a dinner party', done: false, date: '' },
   { title: 'BBQ at Quantum pool', done: false, date: '' },
   { title: 'Karaoke night', done: false, date: '' },
@@ -69,6 +70,7 @@ export const activities: Activity[] = [
   { title: 'Shred on some Guitar Hero', done: false, date: '' },
   { title: 'Be performative at The Bark', done: false, date: '' },
   { title: 'Go to every (and I mean every) bar in a 10 mile radius', done: false, date: '' },
+  { title: 'Destin Fishing Rodeo', done: false, date: '' },
 ]
 
 type ActivityTagCloudProps = {
