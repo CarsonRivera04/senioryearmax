@@ -6,7 +6,7 @@ import Progress from './components/Progress.tsx'
 function ComponentArea() {
   return (
     <section className="component-area" aria-label="React component area">
-      <Progress done={1} total={54} />
+      <Progress done={1} total={55} />
       <ActivityTagCloud />
       <button className="join-button">
         <a href="mailto:carsonrivera04@gmail.com" target="_blank" rel="noopener noreferrer">

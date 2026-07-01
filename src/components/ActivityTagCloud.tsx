@@ -35,6 +35,7 @@ export const activities: Activity[] = [
   { title: 'Watch a Halloween Movie', done: false, date: '' },
   { title: 'Throw a rager for Carson\'s birthday', done: false, date: '' },
   { title: 'Throw a rager for Amaya\'s birthday', done: false, date: '' },
+  { title: 'Throw a rager for Kyara\'s birthday', done: false, date: '' },
   { title: 'Beach day at St. George Island', done: false, date: '' },
   { title: 'Picnic at a park (or Landis)', done: false, date: '' },
   { title: 'Run the Tallahassee Half Marathon', done: false, date: '' },
