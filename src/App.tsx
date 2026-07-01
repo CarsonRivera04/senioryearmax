@@ -2,10 +2,12 @@ import './App.css'
 import ActivityTagCloud from './components/ActivityTagCloud.tsx'
 import CustomCountdown from './components/CustomCountdown.tsx'
 import MasonryGallery from './components/MasonryGallery.tsx'
+import Weather from './components/Weather.tsx'
 
 function ComponentArea() {
   return (
     <section className="component-area" aria-label="React component area">
+      <Weather/>
       <ActivityTagCloud />
       <MasonryGallery />
       <button className="join-button">
