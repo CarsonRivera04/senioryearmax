@@ -41,7 +41,7 @@ function Progress({ done, total }: ProgressProps) {
           <img src="/sub.png" alt="" className="submarine-image" />
           <div className="depth-readout">
             <strong>{roundedProgress}%</strong>
-            <span>{done} of {total} done</span>
+            <span>{done} conquered. {total - done} to go.</span>
           </div>
         </div>
       </div>
