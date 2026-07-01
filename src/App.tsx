@@ -1,12 +1,13 @@
 import './App.css'
 import ActivityTagCloud from './components/ActivityTagCloud.tsx'
 import CustomCountdown from './components/CustomCountdown.tsx'
-import Progress from './components/Progress.tsx'
+import MasonryGallery from './components/MasonryGallery.tsx'
 
 function ComponentArea() {
   return (
     <section className="component-area" aria-label="React component area">
       <ActivityTagCloud />
+      <MasonryGallery />
       <button className="join-button">
         <a href="mailto:carsonrivera04@gmail.com" target="_blank" rel="noopener noreferrer">
           Join the movement

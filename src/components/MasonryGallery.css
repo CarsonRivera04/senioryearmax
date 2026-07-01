@@ -1,0 +1,41 @@
+.masonry-gallery {
+  margin-top: 44px;
+}
+
+.masonry-gallery h2 {
+  font-size: 1.25rem;
+  margin: 0 0 20px;
+}
+
+.masonry-gallery__grid {
+  column-count: 3;
+  column-gap: 12px;
+}
+
+.masonry-gallery__item {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 12px;
+  break-inside: avoid;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background: white;
+}
+
+.masonry-gallery__item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 760px) {
+  .masonry-gallery__grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 460px) {
+  .masonry-gallery__grid {
+    column-count: 1;
+  }
+}
