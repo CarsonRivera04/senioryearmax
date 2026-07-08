@@ -113,6 +113,7 @@ function ActivityTagCloud({ activities: activityList = activities }: ActivityTag
   return (
     <section className="tag-cloud" aria-labelledby="activity-tag-cloud-heading">
       <Progress done={doneCount} total={uniqueActivities.length} />
+      <br/>
       <h2 id="activity-tag-cloud-heading">The Official Senior Year Max Bucket List</h2>
       <p>
         {doneCount} conquered. {uniqueActivities.length - doneCount} to go. 
