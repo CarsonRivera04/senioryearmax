@@ -72,6 +72,8 @@ export const activities: Activity[] = [
   { title: 'Go to every (and I mean every) bar in a 10 mile radius', done: false, date: '' },
   { title: 'Destin Fishing Rodeo', done: false, date: '' },
   { title: 'Disney Channel Games', done: false, date: '' },
+  { title: 'Go out every day of syllabus week', done: false, date: '' },
+  { title: 'Take Carson to a Bajas Latin night', done: false, date: '' }
 ]
 
 type ActivityTagCloudProps = {
