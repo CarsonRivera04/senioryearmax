@@ -5,16 +5,19 @@ import Progress from '../components/Progress.tsx'
 const doneFaceImg = `${import.meta.env.BASE_URL}smiley-face.jpg`
 const notDoneFaceImg = `${import.meta.env.BASE_URL}frowny-face.jpg`
 
-type Activity = {
+export type Activity = {
   title: string
   done: boolean
   date: string
+  /** An image URL, or a path to an image in `public` such as `/pics/bowling.jpg`. */
+  image?: string
   doneImg?: string
   notDoneImg?: string
 }
 
 export const activities: Activity[] = [
-  { title: 'Create senioryearmax.com', done: true, date: '6/27/2026' },
+  { title: 'Create senioryearmax.com', done: true, date: '6/27/2026', image: '/pics2/6.jpg'},
+  // Add `image: '/pics/your-photo.jpg'` to any activity to show its photo here.
   { title: 'Bowling at the Union', done: false, date: '' },
   { title: 'Paint a Pot', done: false, date: '' },
   { title: 'ASLC Movie', done: false, date: '' },
@@ -22,18 +25,25 @@ export const activities: Activity[] = [
   { title: 'Spikeball on Landis', done: false, date: '' },
   { title: 'Meal at Suwannee', done: false, date: '' },
   { title: 'Day at the Rez', done: false, date: '' },
+  { title: 'Win the World Cup.', done: true, date: '7/19/2026', image: '/pics2/1.jpg'},
   { title: 'Volleyball at Salley', done: false, date: '' },
   { title: 'Become Intramural Champions', done: false, date: '' },
   { title: 'Play Racquetball at the Leach', done: false, date: '' },
   { title: 'Truco Tuesday (Trusday)', done: false, date: '' },
   { title: 'Nintendo DS night (Mario Kart)', done: false, date: '' },
-  { title: 'Celebrate America\'s 250th in Destin!', done: true, date: '7/4/2026' },
+  { title: 'Celebrate America\'s 250th in Destin!', done: true, date: '7/4/2026', image: '/pics2/12.jpg' },
   { title: 'Host a dinner party', done: false, date: '' },
   { title: 'BBQ at Quantum pool', done: false, date: '' },
   { title: 'Karaoke night', done: false, date: '' },
   { title: 'Day trip to Thomasville', done: false, date: '' },
   { title: 'Host a white elephant party', done: false, date: '' },
   { title: 'Watch a Christmas Movie', done: false, date: '' },
+  { title: 'Coffee + Donuts + Morning Movie', done: false, date: '' },
+  { title: 'Go climbing!', done: false, date: '' },
+  { title: 'Fight every XY in the IE 27 GroupMe', done: false, date: '' },
+  { title: 'Play Candyland', done: false, date: '' },
+  { title: 'Bake together', done: false, date: '' },
+  { title: 'Cook together', done: false, date: '' },
   { title: 'Watch a Halloween Movie', done: false, date: '' },
   { title: 'Throw a rager for Carson\'s birthday', done: false, date: '' },
   { title: 'Throw a rager for Amaya\'s birthday', done: false, date: '' },
@@ -133,6 +143,14 @@ function ActivityTagCloud({ activities: activityList = activities }: ActivityTag
               key={activity.title}
             >
               <span className="tag-cloud__title">{activity.title}</span>
+              {activity.image && (
+                <img
+                  alt={`Photo for ${activity.title}`}
+                  className="tag-cloud__activity-image"
+                  loading="lazy"
+                  src={activity.image}
+                />
+              )}
               <span className="tag-cloud__status">
                 <img alt="" src={getStatusImage(activity)} />
                 <span>{statusLabel}</span>
