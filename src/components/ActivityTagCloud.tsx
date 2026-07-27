@@ -73,7 +73,7 @@ export const activities: Activity[] = [
   { title: 'Skip flip for Friday night Shabbat', done: false, date: '' },
   { title: 'Host a wine night', done: false, date: '' },
   { title: 'Host a fruit tier list night', done: false, date: '' },
-  { title: 'Invent our drunk spelling bee', done: false, date: '' },
+  { title: 'Invent (and play) our drunk spelling bee', done: false, date: '' },
   { title: 'Play twister', done: false, date: '' },
   { title: 'Flamenco classes at Studio D', done: false, date: '' },
   { title: 'Attend the SHPE National Convention', done: false, date: '' },
@@ -83,7 +83,10 @@ export const activities: Activity[] = [
   { title: 'Destin Fishing Rodeo', done: false, date: '' },
   { title: 'Disney Channel Games', done: false, date: '' },
   { title: 'Go out every day of syllabus week', done: false, date: '' },
-  { title: 'Take Carson to a Bajas Latin night', done: false, date: '' }
+  { title: 'Take Carson to a Bajas Latin night', done: false, date: '' },
+  { title: 'AYCE Sushi for everyone\'s birthday', done: false, date: '' },
+  { title: 'Bar 1903 happy hour', done: false, date: '' },
+  { title: 'Epic Senior Year Spring Break', done: false, date: '' },
 ]
 
 type ActivityTagCloudProps = {
