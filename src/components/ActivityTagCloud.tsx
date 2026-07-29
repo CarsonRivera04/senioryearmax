@@ -27,7 +27,7 @@ export const activities: Activity[] = [
   { title: 'Day at the Rez', done: false, date: '' },
   { title: 'Win the World Cup.', done: true, date: '7/19/2026', image: '/pics2/1.jpg'},
   { title: 'Volleyball at Salley', done: false, date: '' },
-  { title: 'Become Intramural Champions', done: false, date: '' },
+  { title: 'Become Intramural Champions', done: true, date: '7/28/2026', image: '/pics2/2.jpg' },
   { title: 'Play Racquetball at the Leach', done: false, date: '' },
   { title: 'Truco Tuesday (Trusday)', done: false, date: '' },
   { title: 'Nintendo DS night (Mario Kart)', done: false, date: '' },
