@@ -5,6 +5,27 @@
   box-sizing: border-box;
 }
 
+.site-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 28px;
+}
+
+.nav-button {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid black;
+  color: black;
+  background: white;
+  text-decoration: none;
+}
+
+.nav-button:hover,
+.nav-button:focus-visible {
+  color: white;
+  background: black;
+}
+
 .intro {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(180px, 280px);
