@@ -21,7 +21,7 @@ export const activities: Activity[] = [
   { title: 'Bowling at the Union', done: false, date: '' },
   { title: 'Paint a Pot', done: false, date: '' },
   { title: 'ASLC Movie', done: false, date: '' },
-  { title: 'Flip at Township', done: false, date: '' },
+  { title: 'Flip at Township', done: true, date: '7/31/2026', image: '/pics2/3.png'},
   { title: 'Spikeball on Landis', done: false, date: '' },
   { title: 'Meal at Suwannee', done: false, date: '' },
   { title: 'Day at the Rez', done: false, date: '' },
