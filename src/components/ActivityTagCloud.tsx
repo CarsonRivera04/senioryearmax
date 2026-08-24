@@ -20,7 +20,7 @@ export const activities: Activity[] = [
   // Add `image: '/pics/your-photo.jpg'` to any activity to show its photo here.
   { title: 'Bowling at the Union', done: false, date: '' },
   { title: 'Paint a Pot', done: false, date: '' },
-  { title: 'Bowden\'s', done: false, date: '' },
+  { title: 'Bowden\'s', done: true, date: '8/21/2026', image: '/pics2/4.jpg'},
   { title: 'Coosh\'s', done: false, date: '' },
   { title: 'Madison Social', done: false, date: '' },
   { title: 'Township', done: false, date: '' },
